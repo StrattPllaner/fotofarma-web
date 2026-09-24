@@ -174,6 +174,11 @@ section { padding-block: var(--paso); }
   .nav-enlaces { display: flex; margin-left: auto; }
   .nav-enlaces a:not(.solo-movil) { display: none; }
 }
+@media (max-width: 520px) {
+  .nav-caja { gap: 14px; }
+  .nav .boton { padding: 9px 15px; font-size: 0.88rem; }
+  .nav-enlaces { font-size: 0.88rem; }
+}
 .nav .boton { margin-left: auto; }
 @media (min-width: 860px) { .nav .boton { margin-left: 8px; } }
 
@@ -192,6 +197,7 @@ section { padding-block: var(--paso); }
   font-size: 0.95rem;
   font-weight: 500;
   text-decoration: none;
+  white-space: nowrap;
   cursor: pointer;
   transition: transform .16s ease, background .2s ease, border-color .2s ease, color .2s ease;
 }
