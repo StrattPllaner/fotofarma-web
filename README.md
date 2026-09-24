@@ -1,12 +1,16 @@
 # Sitio de FotoFarma
 
 Sitio público de **FotoFarma**, la app que convierte la foto de una receta médica en un
-calendario de tomas con recordatorios. Dos páginas:
+calendario de tomas con recordatorios. Cinco páginas:
 
-- `index.html` — el producto: qué hace, cómo funciona, funciones a fondo, privacidad, ficha técnica y preguntas.
-- `plan-de-negocios.html` — el plan de negocios completo: mercado, competencia, modelo de ingresos,
-  economía unitaria, proyección a tres años, métricas, riesgos, impacto, hoja de ruta y petición de capital.
-  Trae botón para imprimir o guardar en PDF.
+- `index.html` — inicio: solo lo principal (qué es, el problema, los tres pasos y un resumen de las funciones).
+- `funciones.html` — cada función a detalle, con capturas reales, accesibilidad y ficha técnica.
+- `privacidad.html` — dónde viven los datos, qué permisos pide la app y lo que la app no es.
+- `preguntas.html` — preguntas frecuentes, agrupadas en tres bloques.
+- `plan-de-negocios.html` — el plan completo en dieciséis secciones, con índice lateral y
+  botón para imprimir o guardar en PDF.
+
+Las páginas comparten barra y pie; si cambias uno, cámbialo en los cinco archivos.
 
 ## Cómo está hecho
 

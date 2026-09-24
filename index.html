@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FotoFarma — Tus medicinas, a su hora</title>
-<meta name="description" content="FotoFarma convierte la foto de una receta médica en un calendario de tomas con recordatorios, hábitos y búsqueda de farmacias cercanas. Sin cuenta y sin servidores: todo se guarda en tu teléfono.">
+<meta name="description" content="FotoFarma convierte la foto de una receta médica en un calendario de tomas con recordatorios, hábitos y búsqueda de farmacias cercanas. Sin cuenta y sin servidores.">
 <meta name="theme-color" content="#fbfaf7">
 <link rel="icon" href="assets/img/marca.svg" type="image/svg+xml">
 <meta property="og:title" content="FotoFarma — Tus medicinas, a su hora">
-<meta property="og:description" content="De la foto de tu receta a un calendario de tomas, en segundos. Sin cuenta, sin servidores, gratis.">
+<meta property="og:description" content="FotoFarma convierte la foto de una receta médica en un calendario de tomas con recordatorios, hábitos y búsqueda de farmacias cercanas. Sin cuenta y sin servidores.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,15 +17,14 @@
 </head>
 <body>
 
-<header class="nav">
+<header class="nav no-imprimir">
   <div class="nav-caja">
     <a class="marca" href="./"><img src="assets/img/marca.svg" alt=""> FotoFarma</a>
     <nav class="nav-enlaces" aria-label="Principal">
-      <a href="#problema">El problema</a>
-      <a href="#como">Cómo funciona</a>
-      <a href="#funciones">Funciones</a>
-      <a href="#privacidad">Privacidad</a>
-      <a class="solo-movil" href="plan-de-negocios.html">Plan de negocios</a>
+      <a class="solo-movil" href="funciones.html">Funciones</a>
+      <a href="privacidad.html">Privacidad</a>
+      <a href="preguntas.html">Preguntas</a>
+      <a href="plan-de-negocios.html">Plan de negocios</a>
     </nav>
     <a class="boton" href="https://strattpllaner.github.io/Fotofarma2/" target="_blank" rel="noopener">Abrir la app</a>
   </div>
@@ -33,7 +32,6 @@
 
 <main>
 
-<!-- ============ PORTADA ============ -->
 <section class="portada">
   <div class="envoltura">
     <p class="rotulo">Adherencia al tratamiento · Hecho en México</p>
@@ -45,7 +43,7 @@
     </p>
     <div class="boton-fila">
       <a class="boton azul" href="https://strattpllaner.github.io/Fotofarma2/" target="_blank" rel="noopener">Abrir la app</a>
-      <a class="boton claro" href="#como">Ver cómo funciona</a>
+      <a class="boton claro" href="funciones.html">Ver las funciones</a>
     </div>
 
     <div class="dato-fila">
@@ -57,14 +55,13 @@
   </div>
 
   <div class="telefonos">
-    <div class="telefono secundario"><img src="assets/img/app-inicio.png" alt="Pantalla de inicio de FotoFarma con los anillos de tomas del día" width="780" height="1688" loading="eager"></div>
-    <div class="telefono"><img src="assets/img/app-calendario.png" alt="Calendario de tomas y hábitos del día" width="780" height="1688" loading="eager"></div>
+    <div class="telefono secundario"><img src="assets/img/app-inicio.png" alt="Pantalla de inicio de FotoFarma con los anillos de tomas del día" width="780" height="1688"></div>
+    <div class="telefono"><img src="assets/img/app-calendario.png" alt="Calendario de tomas y hábitos del día" width="780" height="1688"></div>
     <div class="telefono secundario"><img src="assets/img/app-farmacias.png" alt="Buscador de farmacias cercanas" width="780" height="1688" loading="lazy"></div>
   </div>
 </section>
 
-<!-- ============ PROBLEMA ============ -->
-<section id="problema" class="noche">
+<section class="noche">
   <div class="envoltura">
     <div class="rejilla rejilla-2 arriba">
       <div>
@@ -82,22 +79,17 @@
           escrito a mano, tres medicamentos con horarios distintos y una duración que nadie anotó.
           A los cuatro días ya no sabes si la de la noche te tocaba o no.
         </p>
-        <ul class="lista-marca" style="margin-top:26px">
-          <li>La letra del médico se vuelve ilegible en cuanto pasa una semana.</li>
-          <li>Las personas mayores suelen llevar varios tratamientos a la vez (polifarmacia), cada uno con su ritmo.</li>
-          <li>Quien cuida a otra persona administra tomas que no son suyas y no tiene dónde apuntarlas.</li>
-          <li>La receta de papel se pierde, se moja o se queda en la bolsa del pantalón.</li>
-        </ul>
-        <p style="margin-top:26px">
-          Saltarse tomas no solo es una molestia: es reingresos hospitalarios, tratamientos que se alargan
-          y dinero perdido en medicina que ya se compró.
+        <p>
+          FotoFarma entra justo ahí: en el momento en que la cadena se rompe.
         </p>
+        <div class="boton-fila">
+          <a class="boton claro" href="plan-de-negocios.html">El problema, a fondo</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ CÓMO FUNCIONA ============ -->
 <section id="como">
   <div class="envoltura">
     <p class="rotulo">Cómo funciona</p>
@@ -142,302 +134,47 @@
   </div>
 </section>
 
-<!-- ============ FUNCIONES ============ -->
-<section id="funciones" class="filo">
-  <div class="envoltura">
-    <p class="rotulo">Funciones</p>
-    <h2>Todo lo que hace la app.</h2>
-    <p class="entrada" style="margin-top:22px">Seis piezas, pensadas para que la primera vez que la abres ya sirva.</p>
-  </div>
-
-  <!-- 1 -->
-  <div class="envoltura" style="margin-top:clamp(56px,7vw,96px)">
-    <div class="rejilla rejilla-2">
-      <div>
-        <p class="rotulo">01 · Lectura de recetas</p>
-        <h3 style="font-size:clamp(1.6rem,3vw,2.3rem)">La receta se lee sola.</h3>
-        <p style="margin-top:16px;color:var(--tinta-70)">
-          Un modelo de inteligencia artificial lee la foto y saca los datos que importan.
-          Después audita la lista y te avisa si dos de tus medicamentos tienen una interacción conocida.
-        </p>
-        <ul class="lista-marca" style="margin-top:22px">
-          <li><b>Extrae</b> nombre, dosis, frecuencia, duración e indicaciones.</li>
-          <li><b>Calcula</b> las tomas: «cada 8 horas» se convierte en 08:00, 16:00 y 00:00, partiendo de la hora en que empieza tu día.</li>
-          <li><b>Programa</b> el tratamiento completo hasta su último día.</li>
-          <li><b>Guarda</b> la foto de la receta por si el médico te la pide después.</li>
-          <li><b>Exige revisión</b>: nada se guarda sin que tú lo confirmes.</li>
-        </ul>
-      </div>
-      <figure class="figura">
-        <div class="telefono solo" style="margin-inline:auto"><img src="assets/img/app-receta-detalle.png" alt="Receta escaneada con la lista de medicamentos" width="780" height="1688" loading="lazy"></div>
-      </figure>
-    </div>
-  </div>
-
-  <!-- 2 -->
-  <div class="envoltura" style="margin-top:clamp(64px,8vw,110px)">
-    <div class="rejilla rejilla-2 invertido">
-      <div>
-        <p class="rotulo">02 · Tomas y recordatorios</p>
-        <h3 style="font-size:clamp(1.6rem,3vw,2.3rem)">Un día a la vez.</h3>
-        <p style="margin-top:16px;color:var(--tinta-70)">
-          El calendario es una lista para palomear, no una hoja de cálculo. Arriba, la tira de días
-          para moverte a ayer o a mañana; abajo, lo que toca hoy.
-        </p>
-        <ul class="lista-marca" style="margin-top:22px">
-          <li>Aviso a la hora de cada toma, con alarma en pantalla que se queda hasta que la atiendes.</li>
-          <li>Palomeas con un toque; el anillo de la pantalla de inicio se llena solo.</li>
-          <li>Puedes agregar o editar una toma a mano, sin receta de por medio.</li>
-          <li>Funciona aunque cierres la app: al volver, el día sigue donde lo dejaste.</li>
-        </ul>
-      </div>
-      <figure class="figura">
-        <div class="telefono solo" style="margin-inline:auto"><img src="assets/img/app-inicio.png" alt="Pantalla de inicio con anillos de progreso y hábitos" width="780" height="1688" loading="lazy"></div>
-      </figure>
-    </div>
-  </div>
-
-  <!-- 3 -->
-  <div class="envoltura" style="margin-top:clamp(64px,8vw,110px)">
-    <div class="rejilla rejilla-2">
-      <div>
-        <p class="rotulo">03 · Hábitos</p>
-        <h3 style="font-size:clamp(1.6rem,3vw,2.3rem)">Lo que no viene en la receta.</h3>
-        <p style="margin-top:16px;color:var(--tinta-70)">
-          Tomar agua, caminar, medir la presión, dormir. Se palomean junto a las medicinas y
-          llevan su racha de días seguidos, porque un tratamiento casi nunca es solo la pastilla.
-        </p>
-        <ul class="lista-marca" style="margin-top:22px">
-          <li><b>Se ajustan a tu edad</b>: a un niño le propone jugar al aire libre y dormir nueve horas; a un adulto mayor, medir su presión y revisar el pastillero.</li>
-          <li>Eliges los días de la semana y una hora opcional.</li>
-          <li>La racha se mantiene aunque aún no palomees el día en curso.</li>
-          <li>Aparecen también en la pantalla de inicio, con su avance del día.</li>
-        </ul>
-      </div>
-      <figure class="figura">
-        <div class="telefono solo" style="margin-inline:auto"><img src="assets/img/app-habito.png" alt="Formulario para crear un hábito con icono, días y hora" width="780" height="1688" loading="lazy"></div>
-      </figure>
-    </div>
-  </div>
-
-  <!-- 4 -->
-  <div class="envoltura" style="margin-top:clamp(64px,8vw,110px)">
-    <div class="rejilla rejilla-2 invertido">
-      <div>
-        <p class="rotulo">04 · Farmacias</p>
-        <h3 style="font-size:clamp(1.6rem,3vw,2.3rem)">Cuando se te acaba a media noche.</h3>
-        <p style="margin-top:16px;color:var(--tinta-70)">
-          Con tu ubicación, la app lista las farmacias más cercanas con su distancia, su horario
-          y el enlace para llegar. Para algunas cadenas consulta además precio y existencia en línea.
-        </p>
-        <ul class="lista-marca" style="margin-top:22px">
-          <li>Datos de farmacias tomados de OpenStreetMap: incluye las de barrio, no solo las cadenas grandes.</li>
-          <li>Consulta de precio y existencia en Farmacias del Ahorro; Similares y Benavides están en camino.</li>
-          <li>Busca por el nombre del medicamento o eligiendo uno de los tuyos.</li>
-          <li><b>La app no vende nada</b> ni aparta producto: te dice a dónde ir y sugiere llamar antes.</li>
-        </ul>
-      </div>
-      <figure class="figura">
-        <div class="telefono solo" style="margin-inline:auto"><img src="assets/img/app-farmacias.png" alt="Pantalla de farmacias cercanas" width="780" height="1688" loading="lazy"></div>
-      </figure>
-    </div>
-  </div>
-
-  <!-- 5 y 6 -->
-  <div class="envoltura" style="margin-top:clamp(64px,8vw,110px)">
-    <div class="rejilla rejilla-2">
-      <div>
-        <p class="rotulo">05 · Tus recetas</p>
-        <h3 style="font-size:clamp(1.6rem,3vw,2.3rem)">El historial que el papel nunca tuvo.</h3>
-        <p style="margin-top:16px;color:var(--tinta-70)">
-          Cada receta escaneada queda guardada con su foto, su fecha y los medicamentos que se
-          dieron de alta. Si borras una receta, sus tomas se van con ella.
-        </p>
-      </div>
-      <div>
-        <p class="rotulo">06 · Perfil</p>
-        <h3 style="font-size:clamp(1.6rem,3vw,2.3rem)">Tú decides todo.</h3>
-        <p style="margin-top:16px;color:var(--tinta-70)">
-          Tu nombre, tu edad, a qué hora empieza tu día —de ahí salen los horarios de las tomas—,
-          los avisos, instalar la app en la pantalla de inicio y un botón para borrar absolutamente todo.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ HECHA PARA CUALQUIERA ============ -->
 <section class="filo">
   <div class="envoltura">
-    <p class="rotulo">Diseño y accesibilidad</p>
-    <h2>Hecha para el teléfono<br>que la gente ya trae.</h2>
-
-    <div class="rejilla rejilla-4" style="margin-top:clamp(44px,5vw,72px)">
-      <div class="ficha revela">
-        <h4>Se instala como app</h4>
-        <p>Desde el navegador queda en la pantalla de inicio, con su icono y su pantalla de bienvenida. No hace falta tienda de apps.</p>
-      </div>
-      <div class="ficha revela">
-        <h4>Ocupa toda la pantalla</h4>
-        <p>Celular, tablet o computadora: la interfaz se reacomoda en vez de quedarse como una columna angosta.</p>
-      </div>
-      <div class="ficha revela">
-        <h4>Letra grande y botones amplios</h4>
-        <p>Pensada para manos de 70 años: los controles de palomear miden más de 40 píxeles y el contraste es alto.</p>
-      </div>
-      <div class="ficha revela">
-        <h4>Ligera de verdad</h4>
-        <p>Pesa alrededor de 165 KB comprimida y guarda los datos localmente, así que responde igual con mala señal.</p>
-      </div>
+    <p class="rotulo">En resumen</p>
+    <h2>Seis cosas que hace.</h2>
+    <div class="rejilla rejilla-3" style="margin-top:clamp(40px,5vw,64px)">
+      <div class="ficha revela"><h4>Lee tu receta</h4><p>Saca medicamento, dosis, frecuencia y duración de una foto, y revisa interacciones conocidas.</p></div>
+      <div class="ficha revela"><h4>Arma el calendario</h4><p>Convierte «cada 8 horas» en horarios reales y programa el tratamiento hasta su último día.</p></div>
+      <div class="ficha revela"><h4>Te avisa</h4><p>Notificación y alarma en pantalla a la hora de cada toma, con una palomita para confirmar.</p></div>
+      <div class="ficha revela"><h4>Suma hábitos</h4><p>Agua, caminar, presión o dormir, con sugerencias distintas según tu edad y racha de días.</p></div>
+      <div class="ficha revela"><h4>Encuentra farmacias</h4><p>Las más cercanas con distancia, horario y ruta; precio y existencia en línea de una cadena.</p></div>
+      <div class="ficha revela"><h4>Guarda tus recetas</h4><p>Cada receta con su foto y sus medicamentos, para cuando el médico te la pida.</p></div>
+    </div>
+    <div class="boton-fila">
+      <a class="boton claro" href="funciones.html">Ver cada función a detalle</a>
     </div>
   </div>
 </section>
 
-<!-- ============ PRIVACIDAD ============ -->
-<section id="privacidad" class="noche">
-  <div class="envoltura">
-    <div class="rejilla rejilla-2 arriba">
-      <div>
-        <p class="rotulo">Privacidad</p>
-        <h2>Tus datos no viven<br>en nuestro servidor.</h2>
-        <p style="margin-top:24px">
-          Porque no hay servidor. FotoFarma es una app que corre entera en tu teléfono: las recetas,
-          las tomas y los hábitos se guardan en el almacenamiento del navegador de tu dispositivo.
-        </p>
-      </div>
-      <div>
-        <ul class="lista-marca">
-          <li><b>Sin cuenta.</b> No pedimos correo, teléfono ni contraseña. No hay perfiles que vender.</li>
-          <li><b>Sin base de datos nuestra.</b> Nadie —nosotros incluidos— puede ver tus tomas.</li>
-          <li><b>La ubicación</b> se pide solo cuando tocas «buscar farmacias» y no se guarda.</li>
-          <li><b>La foto de la receta</b> sí sale del teléfono en un caso: se envía al servicio de inteligencia artificial que la lee, y solo en ese momento. No se sube a ningún otro lado.</li>
-          <li><b>Borrar es borrar.</b> Un botón en Perfil elimina recetas, tomas y hábitos de este dispositivo, sin copias.</li>
-        </ul>
-        <p class="chico" style="margin-top:24px">
-          Como todo vive en el dispositivo, si borras los datos del navegador o cambias de teléfono,
-          la información no te sigue. El respaldo opcional está en la hoja de ruta.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FICHA TÉCNICA ============ -->
 <section class="filo">
   <div class="envoltura">
-    <p class="rotulo">Ficha técnica</p>
-    <h2>Cómo está construida.</h2>
-    <div class="tabla-caja">
-      <table>
-        <caption>Estado a septiembre de 2026.</caption>
-        <tbody>
-          <tr><th scope="row">Plataforma</th><td>Aplicación web progresiva (PWA). Funciona en iPhone, Android, iPad y computadora desde el navegador; se instala en la pantalla de inicio.</td></tr>
-          <tr><th scope="row">Interfaz</th><td>React 19 con Vite y Tailwind CSS 4. Animaciones con Motion.</td></tr>
-          <tr><th scope="row">Almacenamiento</th><td>Local, en el dispositivo (localStorage), con una capa que imita la API de Firestore por si en el futuro hay respaldo en la nube.</td></tr>
-          <tr><th scope="row">Lectura de recetas</th><td>Google Gemini (modelo Flash) llamado directamente desde el navegador, en modo streaming.</td></tr>
-          <tr><th scope="row">Farmacias</th><td>OpenStreetMap vía Overpass para ubicación y horarios; catálogo en línea de Farmacias del Ahorro para precio y existencia.</td></tr>
-          <tr><th scope="row">Avisos</th><td>Notificaciones del sistema más una alarma en pantalla con sonido y confirmación.</td></tr>
-          <tr><th scope="row">Distribución</th><td>Sitio estático publicado en GitHub Pages. Cada cambio se despliega solo al subir el código.</td></tr>
-          <tr><th scope="row">Peso</th><td>≈165 KB comprimidos (JavaScript y CSS).</td></tr>
-          <tr><th scope="row">Idioma</th><td>Español de México.</td></tr>
-          <tr><th scope="row">Costo de operación</th><td>Hospedaje gratuito; el único costo variable es la lectura de recetas con IA.</td></tr>
-        </tbody>
-      </table>
+    <p class="rotulo">Sigue leyendo</p>
+    <div class="rejilla rejilla-3" style="margin-top:clamp(32px,4vw,48px)">
+      <a class="tarjeta-enlace revela" href="funciones.html">
+        <span class="rotulo" style="margin:0 0 10px">Funciones</span>
+        <span class="tarjeta-titulo">Todo lo que hace la app, pantalla por pantalla</span>
+        <span class="tarjeta-pie">Con capturas reales y la ficha técnica →</span>
+      </a>
+      <a class="tarjeta-enlace revela" href="privacidad.html">
+        <span class="rotulo" style="margin:0 0 10px">Privacidad</span>
+        <span class="tarjeta-titulo">Dónde viven tus datos y qué no hace la app</span>
+        <span class="tarjeta-pie">Sin cuenta, sin servidor, sin letra chiquita →</span>
+      </a>
+      <a class="tarjeta-enlace revela" href="plan-de-negocios.html">
+        <span class="rotulo" style="margin:0 0 10px">Plan de negocios</span>
+        <span class="tarjeta-titulo">Mercado, modelo de ingresos y proyección a tres años</span>
+        <span class="tarjeta-pie">Dieciséis secciones, con supuestos a la vista →</span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ============ LÍMITES ============ -->
-<section class="filo">
-  <div class="envoltura">
-    <div class="rejilla rejilla-2 arriba">
-      <div>
-        <p class="rotulo">Honestidad</p>
-        <h2>Lo que FotoFarma<br>no es.</h2>
-      </div>
-      <div>
-        <ul class="lista-marca">
-          <li><b>No es un dispositivo médico</b> ni sustituye a tu médico o a tu farmacéutico.</li>
-          <li><b>No diagnostica ni receta.</b> Solo organiza lo que ya te indicaron.</li>
-          <li><b>La IA se equivoca.</b> Puede confundir una dosis o un nombre parecido; por eso la revisión antes de guardar es obligatoria y la app lo repite cada vez.</li>
-          <li><b>La revisión de interacciones</b> busca casos conocidos y no cubre todos los posibles.</li>
-          <li><b>Precios y existencias</b> son informativos y cambian sin aviso: conviene llamar a la farmacia antes de ir.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PLAN DE NEGOCIOS ============ -->
-<section class="noche">
-  <div class="envoltura">
-    <div class="rejilla rejilla-2 arriba">
-      <div>
-        <p class="rotulo">Plan de negocios</p>
-        <h2>El producto es la mitad;<br>aquí está la otra.</h2>
-        <p style="margin-top:24px">
-          Mercado, modelo de ingresos, costos unitarios, competencia, proyección a tres años,
-          riesgos y hoja de ruta. Todo con sus supuestos a la vista para que cualquiera pueda discutirlos.
-        </p>
-        <div class="boton-fila">
-          <a class="boton" href="plan-de-negocios.html">Leer el plan completo</a>
-        </div>
-      </div>
-      <div>
-        <ul class="lista-marca">
-          <li><b>Gratis siempre</b> lo que salva tratamientos: escanear, recordar y palomear.</li>
-          <li><b>FotoFarma Plus</b> para quien quiere respaldo, historial y reportes para el médico.</li>
-          <li><b>Licencias</b> para clínicas, asilos y programas de salud que necesitan ver adherencia.</li>
-          <li><b>Alianzas con farmacias</b> por surtido, nunca por venta de datos personales.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PREGUNTAS ============ -->
-<section class="filo">
-  <div class="envoltura" style="max-width:920px">
-    <p class="rotulo">Preguntas</p>
-    <h2>Lo que todos preguntan.</h2>
-    <div style="margin-top:clamp(36px,4vw,56px)">
-      <details>
-        <summary>¿Tengo que crear una cuenta?</summary>
-        <p>No. Abres la app y ya está. No hay registro, ni correo, ni contraseña: los datos se guardan en tu propio teléfono.</p>
-      </details>
-      <details>
-        <summary>¿Cuánto cuesta?</summary>
-        <p>Nada. Las funciones que ayudan a no saltarse una toma son gratuitas y seguirán siéndolo. Lo que se cobrará en el futuro son extras como el respaldo en la nube y los reportes para el médico.</p>
-      </details>
-      <details>
-        <summary>¿Qué pasa si la IA lee mal mi receta?</summary>
-        <p>Por eso la app te muestra lo que entendió antes de guardar nada y te deja corregir cada campo. Si algo no coincide con lo que dijo tu médico, tú mandas. La app avisa en todo momento que es una herramienta de apoyo, no un dispositivo médico.</p>
-      </details>
-      <details>
-        <summary>¿Funciona sin internet?</summary>
-        <p>Una vez abierta, el calendario, las tomas y los hábitos funcionan sin conexión, porque viven en tu dispositivo. Necesitas internet para dos cosas: leer una receta nueva con IA y buscar farmacias.</p>
-      </details>
-      <details>
-        <summary>¿Sirve para cuidar a alguien más?</summary>
-        <p>Hoy la app está pensada para una persona por dispositivo, y muchas familias la usan en el teléfono de quien cuida. Los perfiles de cuidador, con varios pacientes y avisos a un familiar, son la siguiente función en la lista.</p>
-      </details>
-      <details>
-        <summary>¿De dónde salen las farmacias y los precios?</summary>
-        <p>Las farmacias vienen de OpenStreetMap, un mapa abierto que incluye tanto cadenas como farmacias de barrio. Los precios y existencias se consultan en el catálogo público en línea de la cadena; son informativos y pueden cambiar.</p>
-      </details>
-      <details>
-        <summary>¿Está en la App Store o en Google Play?</summary>
-        <p>Todavía no. Se instala directo desde el navegador en dos toques, lo que permite actualizarla el mismo día que se corrige algo. Publicarla en las tiendas está en la hoja de ruta.</p>
-      </details>
-      <details>
-        <summary>¿Quién está detrás?</summary>
-        <p>Un equipo mexicano que construyó la app completa —producto, diseño y desarrollo— y la mantiene con código abierto. El detalle está en el plan de negocios.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CIERRE ============ -->
 <section class="filo">
   <div class="envoltura" style="text-align:center">
     <h2 style="max-width:16ch;margin-inline:auto">Ábrela con la receta que traes hoy.</h2>
@@ -446,14 +183,14 @@
     </p>
     <div class="boton-fila" style="justify-content:center">
       <a class="boton azul" href="https://strattpllaner.github.io/Fotofarma2/" target="_blank" rel="noopener">Abrir la app</a>
-      <a class="boton claro" href="plan-de-negocios.html">Ver el plan de negocios</a>
+      <a class="boton claro" href="preguntas.html">Preguntas frecuentes</a>
     </div>
   </div>
 </section>
 
 </main>
 
-<footer class="pie">
+<footer class="pie no-imprimir">
   <div class="envoltura">
     <div class="pie-cols">
       <div>
@@ -461,19 +198,21 @@
         <p class="chico" style="max-width:30ch">Tus medicinas, a su hora. Una herramienta de apoyo para no saltarse un tratamiento.</p>
       </div>
       <div>
-        <h5>Producto</h5>
+        <h5>El sitio</h5>
         <ul>
-          <li><a href="#como">Cómo funciona</a></li>
-          <li><a href="#funciones">Funciones</a></li>
-          <li><a href="#privacidad">Privacidad</a></li>
-          <li><a href="https://strattpllaner.github.io/Fotofarma2/" target="_blank" rel="noopener">Abrir la app</a></li>
+          <li><a href="./">Inicio</a></li>
+          <li><a href="funciones.html">Funciones</a></li>
+          <li><a href="privacidad.html">Privacidad</a></li>
+          <li><a href="preguntas.html">Preguntas</a></li>
+          <li><a href="plan-de-negocios.html">Plan de negocios</a></li>
         </ul>
       </div>
       <div>
         <h5>Proyecto</h5>
         <ul>
-          <li><a class="solo-movil" href="plan-de-negocios.html">Plan de negocios</a></li>
+          <li><a href="https://strattpllaner.github.io/Fotofarma2/" target="_blank" rel="noopener">Abrir la app</a></li>
           <li><a href="https://github.com/StrattPllaner/Fotofarma2" target="_blank" rel="noopener">Código de la app</a></li>
+          <li><a href="https://github.com/StrattPllaner/fotofarma-web" target="_blank" rel="noopener">Código del sitio</a></li>
         </ul>
       </div>
       <div>

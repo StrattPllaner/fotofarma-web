@@ -540,3 +540,64 @@ details p { margin: 14px 0 0; color: var(--tinta-70); max-width: 68ch; }
   table { page-break-inside: avoid; }
   a { text-decoration: none; color: #000; }
 }
+
+/* ---------- Tarjetas que llevan a otra página ---------- */
+
+.tarjeta-enlace {
+  display: flex;
+  flex-direction: column;
+  padding-top: 22px;
+  border-top: 1px solid var(--linea);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .25s ease;
+}
+.tarjeta-enlace:hover { border-color: var(--tinta); }
+.tarjeta-titulo {
+  font-size: 1.22rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+.tarjeta-pie {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: var(--tinta-45);
+  transition: color .25s ease;
+}
+.tarjeta-enlace:hover .tarjeta-pie { color: var(--azul-oscuro); }
+
+/* ---------- Enlace grande al final de cada página ---------- */
+
+.siguiente {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 8px 24px;
+  padding-top: 26px;
+  border-top: 1px solid var(--linea);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .25s ease;
+}
+.siguiente .rotulo { grid-column: 1; }
+.siguiente-titulo {
+  grid-column: 1;
+  font-size: clamp(1.7rem, 4vw, 2.9rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+.siguiente-flecha {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  color: var(--tinta-45);
+  transition: transform .25s var(--ease-out), color .25s ease;
+}
+.siguiente:hover { border-color: var(--tinta); }
+.siguiente:hover .siguiente-flecha { transform: translateX(8px); color: var(--tinta); }
+
+.titulo-funcion { font-size: clamp(1.6rem, 3vw, 2.3rem); }
