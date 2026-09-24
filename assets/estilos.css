@@ -17,6 +17,16 @@
   --agua-claro: #35a3bb;
   --lila: #8355b8;        /* lila del logo, apto para texto */
   --lila-claro: #a678d6;
+  --menta: #17876a;
+  --sol: #b86a09;
+  --rosa: #c0436b;
+
+  /* fondos suaves de cada color, para secciones y tarjetas */
+  --agua-tenue: #e7f5f8;
+  --lila-tenue: #f2ecfa;
+  --azul-tenue: #e9effd;
+  --menta-tenue: #e4f4ee;
+  --sol-tenue: #fdf1de;
 
   --noche: #0e1116;
   --noche-2: #161b23;
@@ -144,7 +154,7 @@ section { padding-block: var(--paso); }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(251, 250, 247, 0.82);
+  background: rgba(251, 250, 247, 0.94);
   backdrop-filter: saturate(180%) blur(14px);
   -webkit-backdrop-filter: saturate(180%) blur(14px);
   border-bottom: 1px solid var(--linea);
@@ -186,7 +196,7 @@ section { padding-block: var(--paso); }
 @media (min-width: 860px) { .nav-enlaces { display: flex; } .nav .boton { margin-left: 0; } }
 /* En celular solo queda un enlace visible, para no apretar la barra */
 @media (max-width: 859px) {
-  .nav-enlaces { display: flex; margin-left: auto; }
+  .nav-enlaces { display: flex; margin-left: auto; gap: 20px; }
   .nav-enlaces a:not(.solo-movil) { display: none; }
 }
 @media (max-width: 520px) {
@@ -857,3 +867,131 @@ details p { margin: 14px 0 0; color: var(--tinta-70); max-width: 68ch; }
   border-top: 1px solid var(--linea);
 }
 .titulo-legal + p, .titulo-legal + ul { color: var(--tinta-70); }
+
+/* ---------- Color por sección ---------- */
+
+.c-agua  { --tono: var(--agua);  --tono-tenue: var(--agua-tenue); }
+.c-lila  { --tono: var(--lila);  --tono-tenue: var(--lila-tenue); }
+.c-azul  { --tono: var(--azul-oscuro); --tono-tenue: var(--azul-tenue); }
+.c-menta { --tono: var(--menta); --tono-tenue: var(--menta-tenue); }
+.c-sol   { --tono: var(--sol);   --tono-tenue: var(--sol-tenue); }
+.c-rosa  { --tono: var(--rosa);  --tono-tenue: #fdeaf0; }
+
+.seccion-num b { color: var(--tono, var(--agua)); }
+.paso .num { color: var(--tono, var(--agua)); }
+.agenda b { color: var(--tono, var(--agua)); }
+.plan-seccion .num-seccion { color: var(--agua); }
+
+/* Fondo teñido: se usa alternando para que la página no sea todo papel */
+.tenue { background: var(--tono-tenue, var(--agua-tenue)); }
+.tenue .ficha, .tenue .paso, .tenue .especificaciones li, .tenue table th,
+.tenue td, .tenue th, .tenue .sub, .tenue .detalle-fino, .tenue details { border-color: rgba(16,19,26,.10); }
+.tenue .tarjeta-enlace { border-color: rgba(16,19,26,.12); }
+
+/* Rótulo con el color de la sección */
+.rotulo.tono { color: var(--tono); }
+
+/* ---------- Tarjetas de colores ---------- */
+
+.ficha { border-top-width: 2px; border-top-color: var(--tono, var(--linea)); }
+.ficha h4 { color: var(--tinta); }
+
+.fichas-color .ficha:nth-child(6n+1) { border-top-color: var(--agua); }
+.fichas-color .ficha:nth-child(6n+2) { border-top-color: var(--lila); }
+.fichas-color .ficha:nth-child(6n+3) { border-top-color: var(--menta); }
+.fichas-color .ficha:nth-child(6n+4) { border-top-color: var(--sol); }
+.fichas-color .ficha:nth-child(6n+5) { border-top-color: var(--azul); }
+.fichas-color .ficha:nth-child(6n+6) { border-top-color: var(--rosa); }
+
+/* Los datos de la portada, cada uno con su color */
+.dato-fila .dato:nth-child(1) b { color: var(--agua); }
+.dato-fila .dato:nth-child(2) b { color: var(--lila); }
+.dato-fila .dato:nth-child(3) b { color: var(--menta); }
+.dato-fila .dato:nth-child(4) b { color: var(--sol); }
+
+/* ---------- Botón grande de la portada ---------- */
+
+.boton-grande {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin-top: clamp(30px, 4vw, 44px);
+  padding: clamp(22px, 3vw, 30px) clamp(24px, 3.4vw, 40px);
+  border-radius: 26px;
+  background: linear-gradient(105deg, var(--agua) 0%, #3f7fc9 52%, var(--lila) 100%);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 24px 46px -26px rgba(48, 92, 160, .85);
+  transition: transform .2s var(--ease-out), box-shadow .25s ease, filter .25s ease;
+}
+.boton-grande:hover { transform: translateY(-2px); box-shadow: 0 30px 54px -26px rgba(48, 92, 160, .95); filter: saturate(1.06); }
+.boton-grande:active { transform: translateY(0) scale(.995); }
+.boton-grande .bg-texto { display: block; }
+.boton-grande .bg-titulo {
+  display: block;
+  font-size: clamp(1.45rem, 3.4vw, 2.3rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+.boton-grande .bg-sub {
+  display: block;
+  margin-top: 8px;
+  font-size: clamp(0.92rem, 1.4vw, 1.05rem);
+  color: rgba(255, 255, 255, .86);
+  max-width: 44ch;
+}
+.boton-grande .bg-flecha {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(48px, 6vw, 62px);
+  height: clamp(48px, 6vw, 62px);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .18);
+  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+  transition: transform .25s var(--ease-out), background .25s ease;
+}
+.boton-grande:hover .bg-flecha { transform: translateX(6px); background: rgba(255, 255, 255, .28); }
+
+/* ---------- Tablas con acento de color ---------- */
+
+table th { color: var(--tono, var(--tinta-45)); }
+caption { color: var(--tinta-45); }
+
+/* ---------- Cifras con fuente citada ---------- */
+
+.cifras {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  background: var(--linea);
+  border: 1px solid var(--linea);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: clamp(32px, 4vw, 48px);
+}
+.cifra-caja { background: var(--papel); padding: clamp(18px, 2.4vw, 26px); }
+.tenue .cifra-caja { background: rgba(255,255,255,.72); }
+.cifra-caja b {
+  display: block;
+  font-size: clamp(1.9rem, 3.6vw, 2.7rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.cifra-caja span { display: block; margin-top: 10px; font-size: 0.92rem; color: var(--tinta-70); line-height: 1.45; }
+.cifra-caja em { display: block; margin-top: 10px; font-size: 0.78rem; font-style: normal; color: var(--tinta-45); }
+.cifras .cifra-caja:nth-child(4n+1) b { color: var(--agua); }
+.cifras .cifra-caja:nth-child(4n+2) b { color: var(--lila); }
+.cifras .cifra-caja:nth-child(4n+3) b { color: var(--menta); }
+.cifras .cifra-caja:nth-child(4n+4) b { color: var(--sol); }
+
+/* La nota lateral toma el color de su sección */
+.nota { border-left-color: var(--tono, var(--azul)); }
+.leyenda li::before { border-color: var(--tono, var(--linea-fuerte)); color: var(--tono, var(--tinta)); }
+.punto { background: var(--tono, var(--tinta)); }
