@@ -1,0 +1,36 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lila" x1="176" y1="0" x2="336" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cb9fec"/>
+      <stop offset="0.6" stop-color="#c092e4"/>
+      <stop offset="0.68" stop-color="#a077bf"/>
+      <stop offset="1" stop-color="#9068ad"/>
+    </linearGradient>
+    <linearGradient id="agua" x1="176" y1="0" x2="336" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5ec4da"/>
+      <stop offset="0.6" stop-color="#4db2cb"/>
+      <stop offset="0.68" stop-color="#31909f"/>
+      <stop offset="1" stop-color="#2b8496"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Cápsula en diagonal: mitad lila arriba, mitad aguamarina abajo -->
+  <g transform="rotate(45 256 256)">
+    <path d="M176 256 L176 126 A80 80 0 0 1 336 126 L336 256 Z" fill="url(#lila)"/>
+    <path d="M176 256 L176 386 A80 80 0 0 0 336 386 L336 256 Z" fill="url(#agua)"/>
+    <!-- Brillos -->
+    <path d="M204 132 A64 64 0 0 1 286 106" stroke="#ffffff" stroke-width="11" stroke-linecap="round" opacity="0.95"/>
+    <path d="M200 290 L200 370 A62 62 0 0 0 220 422" stroke="#a6e4f0" stroke-width="11" stroke-linecap="round" opacity="0.9"/>
+  </g>
+
+  <!-- Obturador: el blanco solo separa las aspas; el color lo pone la cápsula -->
+  <g stroke="#ffffff" stroke-width="12" stroke-linecap="round" fill="none">
+    <circle cx="256" cy="256" r="116"/>
+    <line x1="282.8" y1="209.6" x2="349.4" y2="324.9"/>
+    <line x1="229.2" y1="209.6" x2="362.4" y2="209.6"/>
+    <line x1="202.4" y1="256.0" x2="269.0" y2="140.7"/>
+    <line x1="229.2" y1="302.4" x2="162.6" y2="187.1"/>
+    <line x1="282.8" y1="302.4" x2="149.6" y2="302.4"/>
+    <line x1="309.6" y1="256.0" x2="243.0" y2="371.3"/>
+  </g>
+</svg>

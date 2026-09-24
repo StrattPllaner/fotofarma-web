@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan de negocios — FotoFarma</title>
+<meta name="description" content="Plan de negocios de FotoFarma: problema, solución, mercado, competencia, modelo de ingresos, economía unitaria, proyección a tres años, riesgos, impacto y hoja de ruta.">
+<meta name="theme-color" content="#fbfaf7">
+<link rel="icon" href="assets/img/marca.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilos.css">
+</head>
+<body class="pagina-plan">
+
+<header class="nav no-imprimir">
+  <div class="nav-caja">
+    <a class="marca" href="./"><img src="assets/img/marca.svg" alt=""> FotoFarma</a>
+    <nav class="nav-enlaces" aria-label="Principal">
+      <a class="solo-movil" href="./">Producto</a>
+      <a href="./#funciones">Funciones</a>
+      <a href="./#privacidad">Privacidad</a>
+      <a href="plan-de-negocios.html" aria-current="page">Plan de negocios</a>
+    </nav>
+    <a class="boton" href="https://strattpllaner.github.io/Fotofarma2/" target="_blank" rel="noopener">Abrir la app</a>
+  </div>
+</header>
+
+<main>
+
+<section class="portada" style="padding-bottom:clamp(40px,5vw,64px)">
+  <div class="envoltura">
+    <p class="rotulo">Plan de negocios · Septiembre 2026</p>
+    <h1 style="font-size:clamp(2.3rem,5.4vw,4.2rem);max-width:18ch">Una app gratuita con<br><span class="serif">un negocio detrás</span>.</h1>
+    <p class="entrada" style="margin-top:26px">
+      FotoFarma resuelve un problema que le cuesta caro al sistema de salud —la gente no se toma
+      sus medicinas como se le indicó— con una app que no cobra por lo que salva tratamientos.
+      El negocio está en lo que viene después: respaldo, cuidadores, instituciones y farmacias.
+    </p>
+    <div class="boton-fila no-imprimir">
+      <a class="boton azul" href="#resumen">Empezar a leer</a>
+      <a class="boton claro" href="./">Ver el producto</a>
+      <button class="boton claro" onclick="window.print()">Imprimir o guardar en PDF</button>
+    </div>
+  </div>
+</section>
+
+<section class="filo" style="padding-top:clamp(40px,5vw,64px)">
+<div class="envoltura">
+<div class="plan-cuerpo">
+
+  <!-- ÍNDICE -->
+  <aside class="indice no-imprimir" aria-label="Índice del plan">
+    <p class="rotulo" style="margin-bottom:10px">Índice</p>
+    <ol>
+      <li><a href="#resumen">Resumen ejecutivo</a></li>
+      <li><a href="#problema">El problema</a></li>
+      <li><a href="#solucion">La solución</a></li>
+      <li><a href="#producto">Producto y tecnología</a></li>
+      <li><a href="#mercado">Mercado</a></li>
+      <li><a href="#competencia">Competencia</a></li>
+      <li><a href="#modelo">Modelo de ingresos</a></li>
+      <li><a href="#unitaria">Economía unitaria</a></li>
+      <li><a href="#gtm">Estrategia de entrada</a></li>
+      <li><a href="#finanzas">Proyección a 3 años</a></li>
+      <li><a href="#metricas">Métricas</a></li>
+      <li><a href="#riesgos">Riesgos</a></li>
+      <li><a href="#impacto">Impacto social</a></li>
+      <li><a href="#ruta">Hoja de ruta</a></li>
+      <li><a href="#equipo">Equipo y petición</a></li>
+      <li><a href="#supuestos">Supuestos y fuentes</a></li>
+    </ol>
+  </aside>
+
+  <div>
+
+  <!-- 01 -->
+  <article class="plan-seccion" id="resumen">
+    <span class="num-seccion">01</span>
+    <h2>Resumen ejecutivo</h2>
+    <p>
+      <b>Qué es.</b> FotoFarma es una aplicación mexicana que convierte la foto de una receta médica
+      en un calendario de tomas con recordatorios. Agrega hábitos de salud ajustados a la edad,
+      guarda el historial de recetas y ayuda a encontrar el medicamento en farmacias cercanas.
+      No pide cuenta y guarda todo en el dispositivo del usuario.
+    </p>
+    <p>
+      <b>Qué problema ataca.</b> Cerca de la mitad de los pacientes con enfermedades crónicas no sigue
+      su tratamiento como se le indicó. El punto de quiebre es concreto: el paciente sale del consultorio
+      con instrucciones escritas a mano que se vuelven ilegibles y horarios que nadie tradujo a un plan.
+    </p>
+    <p>
+      <b>Por qué ahora.</b> Hoy existen tres cosas que hace cinco años no: modelos de IA capaces de leer
+      letra manuscrita en español a un costo de centavos por receta, catálogos de farmacias consultables
+      en línea, y teléfonos con navegador suficientemente buenos en manos de la población que más lo necesita.
+    </p>
+    <p>
+      <b>Cómo gana dinero.</b> El núcleo —escanear, recordar, palomear— es gratis y lo seguirá siendo.
+      Se cobra por respaldo y funciones de familia (FotoFarma Plus), por licencias a clínicas, asilos y
+      programas de salud que necesitan medir adherencia, y por alianzas de surtido con farmacias.
+      Nunca por vender datos personales.
+    </p>
+    <p>
+      <b>Estado.</b> La app está construida, en línea y funcionando: lectura de recetas con IA, calendario
+      con alarmas, hábitos, historial y buscador de farmacias con precios de una cadena. Se publica sola
+      con cada cambio y su costo de operación es prácticamente cero.
+    </p>
+
+    <div class="kpi-fila">
+      <div class="kpi"><b>25 M</b><span>Personas en México con tratamiento crónico y teléfono inteligente (estimación)</span></div>
+      <div class="kpi"><b>$4.4 M</b><span>Ingresos proyectados al año 3, en pesos</span></div>
+      <div class="kpi"><b>&lt; $0.05</b><span>Costo en pesos de leer una receta con IA</span></div>
+      <div class="kpi"><b>$450 mil</b><span>Capital solicitado para 12 meses</span></div>
+    </div>
+  </article>
+
+  <!-- 02 -->
+  <article class="plan-seccion" id="problema">
+    <span class="num-seccion">02</span>
+    <h2>El problema</h2>
+    <p>
+      La falta de adherencia al tratamiento es uno de los problemas más caros y menos atendidos de la
+      salud pública. La Organización Mundial de la Salud lo documentó desde 2003: en enfermedades
+      crónicas, alrededor del 50% de los pacientes no toma sus medicamentos como se le indicó.
+      No es desinterés; es un problema de información y de logística cotidiana.
+    </p>
+
+    <h3>Dónde se rompe la cadena</h3>
+    <ul class="lista-marca">
+      <li><b>La receta es papel y letra manuscrita.</b> A los pocos días nadie recuerda si eran 500 u 850 miligramos.</li>
+      <li><b>Nadie traduce la indicación a un horario.</b> «Cada 8 horas por 7 días» exige una cuenta que el paciente hace mal o no hace.</li>
+      <li><b>Varios tratamientos a la vez.</b> En adultos mayores la polifarmacia es la regla: tres o cuatro medicamentos con ritmos distintos.</li>
+      <li><b>El cuidador administra lo que no es suyo.</b> Hijos y nietos llevan el control en la cabeza o en papelitos.</li>
+      <li><b>Se acaba el medicamento a media noche.</b> Sin saber qué farmacia cercana lo tiene, se salta la toma.</li>
+    </ul>
+
+    <h3>Lo que cuesta</h3>
+    <p>
+      Una toma saltada no se nota; cien sí. Se traduce en tratamientos que no funcionan, consultas
+      repetidas, complicaciones evitables y hospitalizaciones. Para la familia es medicina comprada
+      que se queda en el buró; para el sistema de salud, gasto que pudo evitarse con un recordatorio.
+    </p>
+  </article>
+
+  <!-- 03 -->
+  <article class="plan-seccion" id="solucion">
+    <span class="num-seccion">03</span>
+    <h2>La solución</h2>
+    <p>
+      FotoFarma se mete exactamente en el momento en que la cadena se rompe: cuando el paciente sale
+      del consultorio con el papel en la mano. Una foto basta para que el tratamiento entero quede
+      programado.
+    </p>
+
+    <h3>Tres decisiones de producto que la vuelven distinta</h3>
+    <ul class="lista-marca">
+      <li><b>Cero fricción de entrada.</b> Sin registro, sin contraseña, sin tienda de apps. Quien la necesita muchas veces no tiene paciencia para un formulario, y muchas veces tampoco correo.</li>
+      <li><b>La revisión es del humano.</b> La IA propone, la persona confirma. Esa frontera es la que permite usar IA en salud sin convertirse en un dispositivo médico.</li>
+      <li><b>El teléfono es el servidor.</b> Los datos se quedan en el dispositivo: privacidad real, costo de operación casi cero y funcionamiento con mala señal.</li>
+    </ul>
+
+    <h3>Propuesta de valor por usuario</h3>
+    <div class="tabla-caja">
+      <table>
+        <thead>
+          <tr><th scope="col">Para quién</th><th scope="col">Qué gana</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><b>Paciente crónico</b></td><td>Deja de decidir cada día qué le toca: el calendario ya está armado y le avisa.</td></tr>
+          <tr><td><b>Adulto mayor</b></td><td>Letra grande, botones amplios y una sola acción por toma: palomear.</td></tr>
+          <tr><td><b>Cuidador o familiar</b></td><td>Un lugar donde está lo que toma su paciente, con la foto de la receta original.</td></tr>
+          <tr><td><b>Paciente con tratamiento corto</b></td><td>Termina el antibiótico completo, que es justo donde más se abandona.</td></tr>
+          <tr><td><b>Clínica o asilo</b></td><td>Adherencia observable en vez de suposiciones, sin instalar sistemas.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <!-- 04 -->
+  <article class="plan-seccion" id="producto">
+    <span class="num-seccion">04</span>
+    <h2>Producto y tecnología</h2>
+    <p>
+      La app está construida y en operación. No es una maqueta: se puede abrir, escanear una receta real
+      y ver el calendario armado.
+    </p>
+
+    <h3>Funciones en operación</h3>
+    <ul class="lista-marca">
+      <li><b>Lectura de recetas con IA.</b> Extrae medicamento, dosis, frecuencia y duración; convierte «cada 8 horas» en horarios concretos y revisa interacciones conocidas.</li>
+      <li><b>Calendario de tomas.</b> Tira de días, lista para palomear, alta manual, alarma en pantalla y notificaciones del sistema.</li>
+      <li><b>Hábitos ajustados a la edad.</b> Sugerencias distintas para niños, adolescentes, adultos y adultos mayores, con racha de días seguidos.</li>
+      <li><b>Historial de recetas.</b> Cada receta guardada con su foto y sus medicamentos.</li>
+      <li><b>Farmacias cercanas.</b> Ubicación, horarios y ruta; precio y existencia en línea para una cadena, con dos más en camino.</li>
+      <li><b>Instalable.</b> Se agrega a la pantalla de inicio como una app normal.</li>
+    </ul>
+
+    <h3>Arquitectura y por qué importa al negocio</h3>
+    <div class="tabla-caja">
+      <table>
+        <thead><tr><th scope="col">Decisión técnica</th><th scope="col">Consecuencia de negocio</th></tr></thead>
+        <tbody>
+          <tr><td>Sitio estático publicado en GitHub Pages</td><td>Hospedaje sin costo y sin límite práctico de usuarios simultáneos.</td></tr>
+          <tr><td>Datos en el dispositivo, sin base de datos propia</td><td>Sin costo por usuario, sin superficie de fuga de datos de salud y sin obligaciones de custodia.</td></tr>
+          <tr><td>IA llamada por receta, no por usuario</td><td>El costo variable crece con el uso real, no con las descargas.</td></tr>
+          <tr><td>Aplicación web progresiva</td><td>Se actualiza el mismo día; no depende de la revisión de dos tiendas.</td></tr>
+          <tr><td>Capa de almacenamiento con forma de Firestore</td><td>El respaldo en la nube se puede activar después sin reescribir la app.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <!-- 05 -->
+  <article class="plan-seccion" id="mercado">
+    <span class="num-seccion">05</span>
+    <h2>Mercado</h2>
+    <p>
+      México tiene a la vez una población que envejece, una carga alta de enfermedades crónicas y una
+      penetración de teléfonos inteligentes que ya alcanza a la mayoría de los hogares. Esa intersección
+      es el mercado de FotoFarma.
+    </p>
+
+    <div class="tabla-caja">
+      <table>
+        <caption>Cifras de referencia del contexto mexicano. Ver «Supuestos y fuentes».</caption>
+        <thead><tr><th scope="col">Indicador</th><th scope="col" class="num-col">Aproximado</th><th scope="col">Fuente</th></tr></thead>
+        <tbody>
+          <tr><td>Personas de 60 años o más</td><td class="num-col">15 millones</td><td>INEGI, Censo 2020</td></tr>
+          <tr><td>Adultos con diabetes</td><td class="num-col">12 millones</td><td>ENSANUT</td></tr>
+          <tr><td>Adultos con hipertensión</td><td class="num-col">26 millones</td><td>ENSANUT</td></tr>
+          <tr><td>Usuarios de teléfono inteligente</td><td class="num-col">90 millones</td><td>INEGI, ENDUTIH</td></tr>
+          <tr><td>Farmacias en el país</td><td class="num-col">30 mil+</td><td>Estimaciones del sector</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Tamaño del mercado</h3>
+    <div class="tabla-caja">
+      <table>
+        <thead><tr><th scope="col">Nivel</th><th scope="col">Definición</th><th scope="col" class="num-col">Personas</th><th scope="col" class="num-col">Valor anual</th></tr></thead>
+        <tbody>
+          <tr><td><b>TAM</b></td><td>Personas en México con tratamiento crónico o recurrente y teléfono inteligente</td><td class="num-col">25 millones</td><td class="num-col">$2,250 MDP</td></tr>
+          <tr><td><b>SAM</b></td><td>Zonas urbanas, con cuidador o polifarmacia, más clínicas y asilos privados</td><td class="num-col">6 millones</td><td class="num-col">$540 MDP</td></tr>
+          <tr><td><b>SOM</b><br><span class="chico">3 años</span></td><td>Lo que este plan proyecta capturar con los recursos solicitados</td><td class="num-col">180 mil</td><td class="num-col">$4.4 MDP</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="chico">
+      Valor anual calculado con un ingreso promedio por usuario de $90 al año (mezcla de suscripciones
+      individuales, licencias institucionales y alianzas). El SOM equivale al 0.7% del SAM en personas.
+    </p>
+  </article>
+
+  <!-- 06 -->
+  <article class="plan-seccion" id="competencia">
+    <span class="num-seccion">06</span>
+    <h2>Competencia</h2>
+    <div class="tabla-caja">
+      <table>
+        <thead><tr><th scope="col">Alternativa</th><th scope="col">Qué hace bien</th><th scope="col">Dónde falla</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><b>Apps globales de recordatorios</b><br><span class="chico">Medisafe, MyTherapy</span></td>
+            <td>Recordatorios maduros, reportes y sincronización.</td>
+            <td>Todo se captura a mano, piden cuenta, catálogo y lenguaje ajenos al contexto mexicano; no leen una receta manuscrita en español.</td>
+          </tr>
+          <tr>
+            <td><b>Apps de cadenas de farmacia</b></td>
+            <td>Catálogo, promociones y entrega a domicilio.</td>
+            <td>Su objetivo es vender, no que el paciente termine su tratamiento; solo cubren su propio inventario.</td>
+          </tr>
+          <tr>
+            <td><b>La alarma del teléfono</b></td>
+            <td>Gratis, ya instalada, todos saben usarla.</td>
+            <td>No sabe qué medicamento es, ni cuándo termina el tratamiento, ni registra si se tomó.</td>
+          </tr>
+          <tr>
+            <td><b>Pastillero físico</b></td>
+            <td>Barato, visual y sin batería.</td>
+            <td>Alguien tiene que llenarlo, no avisa y no deja registro para el médico.</td>
+          </tr>
+          <tr>
+            <td><b>Expedientes clínicos digitales</b></td>
+            <td>Datos completos del lado del médico.</td>
+            <td>Viven en la institución; el paciente no los ve ni los usa en su casa.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Ventaja defendible</h3>
+    <ul class="lista-marca">
+      <li><b>La receta como punto de entrada.</b> Nadie más convierte el papel del consultorio mexicano en un plan de tomas sin teclear.</li>
+      <li><b>Cero fricción.</b> Sin cuenta y con 165 KB, funciona en teléfonos y planes de datos modestos, justo donde está el problema.</li>
+      <li><b>Contexto local.</b> Nombres comerciales mexicanos, farmacias de barrio en el mapa y precios de cadenas locales.</li>
+      <li><b>Privacidad como arquitectura.</b> No tener datos de salud en un servidor es una ventaja legal y comercial frente a quien sí los tiene.</li>
+      <li><b>Velocidad.</b> Un equipo pequeño publica mejoras el mismo día, sin esperar a las tiendas de apps.</li>
+    </ul>
+  </article>
+
+  <!-- 07 -->
+  <article class="plan-seccion" id="modelo">
+    <span class="num-seccion">07</span>
+    <h2>Modelo de ingresos</h2>
+    <p>
+      Regla que ordena todo: <b>lo que evita que alguien se salte una toma es gratis</b>. Se cobra por
+      comodidad, por respaldo y por lo que una institución necesita para medir.
+    </p>
+
+    <div class="tabla-caja">
+      <table>
+        <thead><tr><th scope="col">Línea</th><th scope="col">Qué incluye</th><th scope="col" class="num-col">Precio</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><b>Gratis</b></td>
+            <td>Escaneo de recetas, calendario, alarmas, hábitos, historial y farmacias cercanas.</td>
+            <td class="num-col">$0</td>
+          </tr>
+          <tr>
+            <td><b>FotoFarma Plus</b></td>
+            <td>Respaldo cifrado y cambio de teléfono, historial ilimitado con fotos, reporte en PDF para el médico, hasta cinco perfiles de familia y aviso a un familiar cuando se salta una toma.</td>
+            <td class="num-col">$39/mes<br>$349/año</td>
+          </tr>
+          <tr>
+            <td><b>Licencia institucional</b></td>
+            <td>Clínicas, asilos, casas de día y programas municipales: panel de adherencia por paciente, alta asistida de tratamientos y reportes agregados.</td>
+            <td class="num-col">$19,900/año<br><span class="chico">por sede, hasta 100 pacientes</span></td>
+          </tr>
+          <tr>
+            <td><b>Alianzas con farmacias</b></td>
+            <td>Aparecer como farmacia verificada con horario y existencia al día, y cupones de surtido. Sin datos personales de por medio.</td>
+            <td class="num-col">$299/mes<br><span class="chico">por sucursal</span></td>
+          </tr>
+          <tr>
+            <td><b>Programas patrocinados</b><br><span class="chico">A partir del año 3</span></td>
+            <td>Aseguradoras y laboratorios que financian el acompañamiento de pacientes, con consentimiento explícito y datos agregados.</td>
+            <td class="num-col">Por convenio</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>Lo que no vamos a hacer</h4>
+    <p>
+      No vender datos personales de salud, no poner publicidad dentro del flujo de una toma y no
+      condicionar un recordatorio a una suscripción. Además de ser una postura ética, es lo que
+      sostiene la confianza que hace que la app se recomiende de boca en boca.
+    </p>
+  </article>
+
+  <!-- 08 -->
+  <article class="plan-seccion" id="unitaria">
+    <span class="num-seccion">08</span>
+    <h2>Economía unitaria</h2>
+    <p>
+      La arquitectura de la app hace que servir a un usuario cueste prácticamente nada: no hay servidor
+      que escale ni base de datos que crezca. El único costo variable real es leer recetas con IA.
+    </p>
+    <div class="tabla-caja">
+      <table>
+        <thead><tr><th scope="col">Concepto</th><th scope="col" class="num-col">Valor</th><th scope="col">Nota</th></tr></thead>
+        <tbody>
+          <tr><td>Costo de leer una receta</td><td class="num-col">&lt; $0.05</td><td>Modelo ligero, una imagen y respuesta breve.</td></tr>
+          <tr><td>Recetas por usuario al año</td><td class="num-col">4</td><td>Supuesto conservador para paciente crónico.</td></tr>
+          <tr><td>Costo variable por usuario al año</td><td class="num-col">$1.20</td><td>Incluye reintentos y margen de error.</td></tr>
+          <tr><td>Costo de hospedaje por usuario</td><td class="num-col">$0.00</td><td>Sitio estático.</td></tr>
+          <tr><td>Ingreso promedio por usuario (año 3)</td><td class="num-col">$24.60</td><td>Todas las líneas entre el total de usuarios activos.</td></tr>
+          <tr><td>Margen bruto</td><td class="num-col">≈ 95%</td><td>El costo está en el equipo, no en la infraestructura.</td></tr>
+          <tr><td>Costo de adquisición por suscriptor</td><td class="num-col">$60</td><td>Canales de bajo costo: farmacias, clínicas y recomendación.</td></tr>
+          <tr><td>Valor de vida de un suscriptor</td><td class="num-col">$673</td><td>$349 al año, 2.5 años promedio, 95% de margen.</td></tr>
+          <tr><td>Relación valor/costo</td><td class="num-col">11×</td><td>Sano a partir de 3×.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <!-- 09 -->
+  <article class="plan-seccion" id="gtm">
+    <span class="num-seccion">09</span>
+    <h2>Estrategia de entrada</h2>
+    <p>
+      Nadie busca en la tienda de apps «app para no saltarme mis medicinas». La app tiene que aparecer
+      en el momento y el lugar donde nace el problema: el consultorio y el mostrador de la farmacia.
+    </p>
+
+    <h3>Fase 1 · Prueba en campo (meses 1–4)</h3>
+    <ul class="lista-marca">
+      <li>Tres sedes piloto: una clínica privada, una casa de día y una farmacia independiente.</li>
+      <li>Código QR impreso junto a la receta: se escanea y la app abre sin instalar nada.</li>
+      <li>Meta: 500 usuarios acompañados y medición real de adherencia a 30 días.</li>
+    </ul>
+
+    <h3>Fase 2 · Canal de cuidadores (meses 5–9)</h3>
+    <ul class="lista-marca">
+      <li>El mensaje no es para el paciente, sino para quien lo cuida: hijas e hijos de 30 a 50 años.</li>
+      <li>Contenido en video corto mostrando el escaneo real de una receta.</li>
+      <li>Alianza con asociaciones de pacientes crónicos y con programas municipales de adulto mayor.</li>
+      <li>Meta: 12,000 usuarios activos y las primeras licencias institucionales.</li>
+    </ul>
+
+    <h3>Fase 3 · Red de farmacias (meses 10–18)</h3>
+    <ul class="lista-marca">
+      <li>Farmacias independientes que quieren aparecer con horario y existencia al día.</li>
+      <li>Convenio con una cadena regional para surtido y cupones.</li>
+      <li>Publicación en App Store y Google Play para ganar confianza de descarga.</li>
+      <li>Meta: 55,000 usuarios activos y 40 sucursales aliadas.</li>
+    </ul>
+  </article>
+
+  <!-- 10 -->
+  <article class="plan-seccion" id="finanzas">
+    <span class="num-seccion">10</span>
+    <h2>Proyección a tres años</h2>
+    <div class="tabla-caja">
+      <table>
+        <caption>Cifras en pesos mexicanos. Escenario base.</caption>
+        <thead><tr><th scope="col">Concepto</th><th scope="col" class="num-col">Año 1</th><th scope="col" class="num-col">Año 2</th><th scope="col" class="num-col">Año 3</th></tr></thead>
+        <tbody>
+          <tr><td>Usuarios activos al mes</td><td class="num-col">12,000</td><td class="num-col">55,000</td><td class="num-col">180,000</td></tr>
+          <tr><td>Conversión a Plus</td><td class="num-col">2.0%</td><td class="num-col">3.0%</td><td class="num-col">4.0%</td></tr>
+          <tr><td>Suscriptores Plus</td><td class="num-col">240</td><td class="num-col">1,650</td><td class="num-col">7,200</td></tr>
+          <tr><td>Ingresos por Plus</td><td class="num-col">$72,000</td><td class="num-col">$493,000</td><td class="num-col">$2,153,000</td></tr>
+          <tr><td>Sedes con licencia</td><td class="num-col">4</td><td class="num-col">15</td><td class="num-col">60</td></tr>
+          <tr><td>Ingresos institucionales</td><td class="num-col">$80,000</td><td class="num-col">$299,000</td><td class="num-col">$1,194,000</td></tr>
+          <tr><td>Sucursales aliadas</td><td class="num-col">0</td><td class="num-col">40</td><td class="num-col">300</td></tr>
+          <tr><td>Ingresos por alianzas</td><td class="num-col">$0</td><td class="num-col">$143,000</td><td class="num-col">$1,076,000</td></tr>
+          <tr><td><b>Ingresos totales</b></td><td class="num-col"><b>$152,000</b></td><td class="num-col"><b>$935,000</b></td><td class="num-col"><b>$4,423,000</b></td></tr>
+          <tr><td>Costo de IA</td><td class="num-col">$14,000</td><td class="num-col">$61,000</td><td class="num-col">$198,000</td></tr>
+          <tr><td>Infraestructura y herramientas</td><td class="num-col">$18,000</td><td class="num-col">$48,000</td><td class="num-col">$120,000</td></tr>
+          <tr><td>Equipo</td><td class="num-col">$0</td><td class="num-col">$720,000</td><td class="num-col">$2,160,000</td></tr>
+          <tr><td>Marketing y alianzas</td><td class="num-col">$60,000</td><td class="num-col">$180,000</td><td class="num-col">$480,000</td></tr>
+          <tr><td><b>Costos totales</b></td><td class="num-col"><b>$92,000</b></td><td class="num-col"><b>$1,009,000</b></td><td class="num-col"><b>$2,958,000</b></td></tr>
+          <tr><td><b>Resultado del ejercicio</b></td><td class="num-col"><b>+$60,000</b></td><td class="num-col"><b>−$74,000</b></td><td class="num-col"><b>+$1,465,000</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="chico">
+      El año 1 opera con el trabajo de los fundadores y sin sueldos, por eso es rentable en pequeño.
+      El año 2 es de inversión deliberada: se contrata al primer equipo y se abre el canal institucional.
+      El punto de equilibrio sostenido llega en el año 3.
+    </p>
+
+    <h3>Escenarios</h3>
+    <div class="tabla-caja">
+      <table>
+        <thead><tr><th scope="col">Escenario</th><th scope="col">Supuesto que cambia</th><th scope="col" class="num-col">Ingresos año 3</th></tr></thead>
+        <tbody>
+          <tr><td><b>Conservador</b></td><td>Mitad de usuarios activos y conversión de 2.5%</td><td class="num-col">$1,890,000</td></tr>
+          <tr><td><b>Base</b></td><td>El de la tabla anterior</td><td class="num-col">$4,423,000</td></tr>
+          <tr><td><b>Optimista</b></td><td>Convenio con una cadena nacional y un programa estatal de adulto mayor</td><td class="num-col">$8,600,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <!-- 11 -->
+  <article class="plan-seccion" id="metricas">
+    <span class="num-seccion">11</span>
+    <h2>Métricas</h2>
+    <p>
+      Una app de adherencia no se mide por descargas, sino por tomas que sí ocurrieron. Estas son las
+      métricas que este proyecto se compromete a reportar.
+    </p>
+    <div class="tabla-caja">
+      <table>
+        <thead><tr><th scope="col">Métrica</th><th scope="col">Por qué importa</th><th scope="col" class="num-col">Meta año 1</th></tr></thead>
+        <tbody>
+          <tr><td>Activación</td><td>Porcentaje que escanea su primera receta en la primera sesión.</td><td class="num-col">45%</td></tr>
+          <tr><td>Tomas palomeadas a 7 días</td><td>Mide si la app realmente acompaña la primera semana.</td><td class="num-col">70%</td></tr>
+          <tr><td>Tomas palomeadas a 30 días</td><td>El indicador de adherencia que le interesa a una clínica.</td><td class="num-col">55%</td></tr>
+          <tr><td>Retención a 30 días</td><td>Gente que sigue abriendo la app un mes después.</td><td class="num-col">35%</td></tr>
+          <tr><td>Tratamientos terminados</td><td>Cursos cortos (antibióticos) completados hasta el último día.</td><td class="num-col">60%</td></tr>
+          <tr><td>Racha media de hábitos</td><td>Señal de que la app se volvió rutina diaria.</td><td class="num-col">6 días</td></tr>
+          <tr><td>Satisfacción (NPS)</td><td>La recomendación es el canal principal en este segmento.</td><td class="num-col">≥ 50</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <!-- 12 -->
+  <article class="plan-seccion" id="riesgos">
+    <span class="num-seccion">12</span>
+    <h2>Riesgos y cómo se atienden</h2>
+    <div class="tabla-caja">
+      <table>
+        <thead><tr><th scope="col">Riesgo</th><th scope="col">Impacto</th><th scope="col">Mitigación</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><b>La IA lee mal una dosis</b></td><td>Alto</td>
+            <td>Revisión humana obligatoria antes de guardar, aviso legal visible, y registro anónimo de correcciones para mejorar las instrucciones del modelo.</td>
+          </tr>
+          <tr>
+            <td><b>Encuadre regulatorio</b></td><td>Alto</td>
+            <td>La app no diagnostica ni ajusta dosis: organiza lo ya recetado. Antes de cualquier función clínica se busca opinión legal y, si aplica, registro sanitario.</td>
+          </tr>
+          <tr>
+            <td><b>Dependencia del proveedor de IA</b></td><td>Medio</td>
+            <td>La lectura está aislada en un módulo intercambiable; el costo por receta es tan bajo que permite cambiar de proveedor sin romper el modelo.</td>
+          </tr>
+          <tr>
+            <td><b>Datos personales de salud</b></td><td>Alto</td>
+            <td>Hoy no se almacenan fuera del dispositivo. Cuando llegue el respaldo será cifrado, opcional y con consentimiento explícito conforme a la ley mexicana de datos personales.</td>
+          </tr>
+          <tr>
+            <td><b>Cadenas que bloquean su catálogo</b></td><td>Medio</td>
+            <td>Varias fuentes en paralelo y degradación elegante: si no hay precio, la app sigue mostrando ubicación y horario.</td>
+          </tr>
+          <tr>
+            <td><b>Adopción lenta entre adultos mayores</b></td><td>Alto</td>
+            <td>La entrada es por cuidadores e instituciones, no por descarga individual; el QR junto a la receta elimina el paso de instalar.</td>
+          </tr>
+          <tr>
+            <td><b>Un grande copia la función</b></td><td>Medio</td>
+            <td>La ventaja no es el escaneo, es el contexto local y la confianza. Se profundiza con farmacias de barrio y convenios institucionales.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <!-- 13 -->
+  <article class="plan-seccion" id="impacto">
+    <span class="num-seccion">13</span>
+    <h2>Impacto social</h2>
+    <p>
+      El objetivo social y el comercial apuntan al mismo lado: cada toma que no se salta es una
+      complicación menos. El proyecto se alinea con el Objetivo de Desarrollo Sostenible 3
+      (salud y bienestar), en particular con la reducción de la mortalidad por enfermedades no transmisibles.
+    </p>
+    <ul class="lista-marca">
+      <li><b>Gratuito donde más duele.</b> El núcleo no cuesta y funciona en teléfonos de gama baja con poco plan de datos.</li>
+      <li><b>Sin barrera de alfabetización digital.</b> Sin registro, sin contraseñas y con una sola acción por toma.</li>
+      <li><b>Evidencia, no discurso.</b> El piloto medirá adherencia a 30 días con un grupo de comparación para poder afirmar que funciona.</li>
+      <li><b>Código abierto.</b> El desarrollo es público y auditable, lo que permite que una institución revise qué hace la app con los datos.</li>
+    </ul>
+  </article>
+
+  <!-- 14 -->
+  <article class="plan-seccion" id="ruta">
+    <span class="num-seccion">14</span>
+    <h2>Hoja de ruta</h2>
+    <ul class="hitos">
+      <li><b>T4 2026</b><span>Respaldo opcional cifrado y perfiles de cuidador con hasta cinco pacientes. Cierre de las tres sedes piloto.</span></li>
+      <li><b>T1 2027</b><span>Reporte en PDF para llevar al médico y recordatorios por mensaje para quien no instala nada.</span></li>
+      <li><b>T2 2027</b><span>Panel de adherencia para clínicas y asilos; primeras licencias institucionales cobradas.</span></li>
+      <li><b>T3 2027</b><span>Precio y existencia en Similares y Benavides; comparador entre farmacias cercanas.</span></li>
+      <li><b>T4 2027</b><span>Publicación en App Store y Google Play, y publicación de resultados de adherencia del piloto.</span></li>
+    </ul>
+  </article>
+
+  <!-- 15 -->
+  <article class="plan-seccion" id="equipo">
+    <span class="num-seccion">15</span>
+    <h2>Equipo y lo que buscamos</h2>
+    <h3>Equipo</h3>
+    <p>
+      <span class="editable">[Nombre del fundador] — Producto y desarrollo.</span>
+      <span class="editable">[Nombre] — [rol].</span>
+      <span class="editable">[Asesor clínico: nombre y credencial].</span>
+      Sustituye estas líneas por el equipo real antes de presentar; un jurado nacional pregunta
+      siempre por el respaldo clínico del proyecto.
+    </p>
+    <p>
+      Lo que sí está probado: la app completa —producto, diseño, desarrollo y despliegue— fue construida
+      y puesta en línea por este equipo, y se mantiene con actualizaciones continuas.
+    </p>
+
+    <h3>Lo que buscamos</h3>
+    <p>$450,000 pesos para 12 meses, más acompañamiento para abrir puertas institucionales.</p>
+    <div class="tabla-caja">
+      <table>
+        <thead><tr><th scope="col">Destino</th><th scope="col" class="num-col">Monto</th><th scope="col">Para qué</th></tr></thead>
+        <tbody>
+          <tr><td>Desarrollo</td><td class="num-col">$200,000</td><td>Respaldo cifrado, perfiles de cuidador y panel institucional.</td></tr>
+          <tr><td>Piloto clínico</td><td class="num-col">$90,000</td><td>Tres sedes, medición de adherencia y acompañamiento de 500 pacientes.</td></tr>
+          <tr><td>Legal y privacidad</td><td class="num-col">$45,000</td><td>Aviso de privacidad, encuadre regulatorio y términos para instituciones.</td></tr>
+          <tr><td>Marketing y alianzas</td><td class="num-col">$70,000</td><td>Material para farmacias, video y contenido para cuidadores.</td></tr>
+          <tr><td>Infraestructura</td><td class="num-col">$45,000</td><td>IA, tiendas de apps, dominio y herramientas por un año.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:22px">
+      Además del capital: contacto con una red de clínicas o casas de día, asesoría regulatoria en
+      salud digital y una carta de intención de alguna cadena de farmacias regional.
+    </p>
+  </article>
+
+  <!-- 16 -->
+  <article class="plan-seccion" id="supuestos">
+    <span class="num-seccion">16</span>
+    <h2>Supuestos y fuentes</h2>
+    <p class="aviso">
+      Las cifras de mercado son de referencia y provienen de fuentes públicas (INEGI, ENSANUT,
+      Organización Mundial de la Salud) redondeadas para dar contexto; las proyecciones son estimaciones
+      propias construidas sobre supuestos explícitos. Antes de presentarlas en una competencia
+      nacional conviene verificar cada dato con la edición más reciente de su fuente y ajustar los
+      precios a la realidad de tu plaza.
+    </p>
+    <h4>Supuestos principales</h4>
+    <ul class="lista-marca">
+      <li>Ingreso promedio por suscriptor: $299 al año, considerando mezcla de planes mensuales y anuales y meses sin pago.</li>
+      <li>Permanencia promedio de un suscriptor: 2.5 años.</li>
+      <li>Cuatro recetas escaneadas por usuario al año.</li>
+      <li>Licencia institucional promedio: una sede con menos de 100 pacientes.</li>
+      <li>Costo de equipo del año 2: dos personas de tiempo completo; del año 3: seis.</li>
+      <li>Sin costo de hospedaje mientras la app siga siendo estática y sin base de datos propia.</li>
+    </ul>
+  </article>
+
+  </div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="pie no-imprimir">
+  <div class="envoltura">
+    <div class="pie-cols">
+      <div>
+        <a class="marca" href="./" style="margin-bottom:12px"><img src="assets/img/marca.svg" alt=""> FotoFarma</a>
+        <p class="chico" style="max-width:30ch">Tus medicinas, a su hora.</p>
+      </div>
+      <div>
+        <h5>Producto</h5>
+        <ul>
+          <li><a href="./">Inicio</a></li>
+          <li><a href="./#funciones">Funciones</a></li>
+          <li><a href="https://strattpllaner.github.io/Fotofarma2/" target="_blank" rel="noopener">Abrir la app</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Plan</h5>
+        <ul>
+          <li><a href="#resumen">Resumen ejecutivo</a></li>
+          <li><a href="#finanzas">Proyección</a></li>
+          <li><a href="#supuestos">Supuestos y fuentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Aviso</h5>
+        <p class="chico" style="max-width:34ch">Documento de trabajo. Las proyecciones son estimaciones y no constituyen una promesa de resultados.</p>
+      </div>
+    </div>
+    <div class="pie-abajo">
+      <span>© 2026 FotoFarma</span>
+      <span>Hecho en México</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/sitio.js" defer></script>
+</body>
+</html>
