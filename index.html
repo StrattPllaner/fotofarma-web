@@ -53,7 +53,7 @@
     <div class="dato-fila">
       <div class="dato"><b>1 foto</b><span>Es todo lo que necesitas para armar el calendario completo</span></div>
       <div class="dato"><b>0 cuentas</b><span>No pide correo ni contraseña: nada que recordar</span></div>
-      <div class="dato"><b>170 KB</b><span>Pesa la app comprimida; abre en teléfonos modestos</span></div>
+      <div class="dato"><b>171 KB</b><span>Pesa la app comprimida; abre en teléfonos modestos</span></div>
       <div class="dato"><b>$0</b><span>Gratis, sin anuncios y sin venta de datos</span></div>
     </div>
 
@@ -96,10 +96,10 @@
       </div>
       <div>
         <ul class="especificaciones">
-          <li><span class="clave">Última versión</span><span class="valor"><b>24 de septiembre de 2026</b> · términos, aviso de privacidad y consentimiento obligatorio</span></li>
+          <li><span class="clave">Última versión</span><span class="valor"><b>25 de septiembre de 2026</b> · la pestaña Búsqueda, ahora con hospitales</span></li>
           <li><span class="clave">Código</span><span class="valor"><b>3,932 líneas</b> entre la app, el almacenamiento local y el intermediario de farmacias</span></li>
-          <li><span class="clave">Peso</span><span class="valor"><b>160.1 KB</b> de JavaScript y <b>10.0 KB</b> de CSS, comprimidos</span></li>
-          <li><span class="clave">Pantallas</span><span class="valor"><b>Nueve</b>: portada, inicio, cámara, revisión, calendario, recetas, detalle, farmacias y perfil</span></li>
+          <li><span class="clave">Peso</span><span class="valor"><b>161.3 KB</b> de JavaScript y <b>10.0 KB</b> de CSS, comprimidos</span></li>
+          <li><span class="clave">Pantallas</span><span class="valor"><b>Nueve</b>: portada, inicio, cámara, revisión, calendario, recetas, detalle, búsqueda y perfil</span></li>
           <li><span class="clave">Datos</span><span class="valor"><b>Cuatro colecciones</b> en el dispositivo: tomas, recetas, hábitos y ajustes</span></li>
           <li><span class="clave">Operación</span><span class="valor"><b>$0 de hospedaje.</b> Lo único variable es leer recetas con IA</span></li>
           <li><span class="clave">Pruebas</span><span class="valor">Chrome y Safari, en <b>seis tamaños</b> de pantalla, antes de cada publicación</span></li>
@@ -596,8 +596,8 @@
   <div class="envoltura" style="margin-top:clamp(56px,7vw,96px)">
     <div class="rejilla rejilla-2 arriba invertido">
       <div>
-        <p class="rotulo">04 · Farmacias</p>
-        <h3 class="titulo-funcion">Cuando se te acaba a media noche.</h3>
+        <p class="rotulo">04 · Búsqueda</p>
+        <h3 class="titulo-funcion">Farmacias y hospitales,<br>en la misma pestaña.</h3>
         <p style="margin-top:16px;color:var(--tinta-70)">
           Con tu ubicación, la app busca las farmacias a tu alrededor en OpenStreetMap —el mapa
           abierto que también incluye las de barrio— y las ordena por distancia real, calculada
@@ -621,22 +621,27 @@
             <li><b>No vende nada</b>: no aparta producto ni cobra comisión, y sugiere llamar antes de ir.</li>
           </ul>
         </div>
-      </div>
-      <figure class="figura anotada">
-        <div class="telefono solo" style="margin-inline:auto">
-          <img src="assets/img/app-farmacias.png" alt="Pantalla de farmacias con buscador y lista de medicamentos propios" width="780" height="1688" loading="lazy">
-          <span class="punto" style="--x:50%;--y:14.5%">1</span>
-          <span class="punto" style="--x:50%;--y:51%">2</span>
-          <span class="punto" style="--x:30%;--y:66%">3</span>
-          <span class="punto" style="--x:50%;--y:87%">4</span>
+        <div class="detalle-fino">
+          <h4>Hospitales y clínicas</h4>
+          <ul>
+            <li>El segundo apartado lista <b>hospitales y clínicas</b> cerca de ti, ordenados por distancia.</li>
+            <li>Cada uno con su etiqueta —hospital o clínica—, quién lo opera (IMSS, ISSSTE, Cruz Roja…) y un distintivo rojo cuando tiene <b>urgencias</b>.</li>
+            <li>Horario, teléfono para llamar y ruta para llegar, igual que en las farmacias.</li>
+            <li>Arriba de todo, un aviso para <b>llamar al 911</b>: si es una emergencia, no hay que ponerse a buscar.</li>
+            <li>Un buscador filtra la lista por nombre cuando ya sabes a cuál quieres ir.</li>
+          </ul>
         </div>
-        <ol class="leyenda">
-          <li><b>Buscador</b> por nombre de medicamento.</li>
-          <li><b>Buscar cercanas</b>: pide la ubicación solo al tocarlo.</li>
-          <li><b>Tus medicamentos</b> como atajos, tomados del calendario.</li>
-          <li><b>Explicación</b> de cada camino, en vez de una pantalla vacía.</li>
-        </ol>
-      </figure>
+      </div>
+      <div class="telefonos trio" style="margin:0;padding:0">
+        <figure class="figura">
+          <div class="telefono"><img src="assets/img/app-farmacias.png" alt="Apartado de medicinas con buscador y lista de medicamentos propios" width="780" height="1688" loading="lazy"></div>
+          <figcaption><b>Medicinas.</b> Buscador, tus medicamentos como atajos y las farmacias cercanas.</figcaption>
+        </figure>
+        <figure class="figura">
+          <div class="telefono"><img src="assets/img/app-hospitales.png" alt="Lista de hospitales y clínicas cercanos con distancia y etiquetas" width="780" height="1688" loading="lazy"></div>
+          <figcaption><b>Hospitales.</b> Resultados reales en Cuernavaca: distancia, tipo y aviso de urgencias.</figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 
@@ -696,7 +701,7 @@
           <tr><td><b>Calendario</b></td><td>Tomas y hábitos del día elegido, para palomear.</td><td>Pestaña 2</td></tr>
           <tr><td><b>Mis recetas</b></td><td>Galería de recetas escaneadas.</td><td>Dentro del calendario</td></tr>
           <tr><td><b>Detalle de receta</b></td><td>Foto original y medicamentos de esa receta.</td><td>Desde la galería</td></tr>
-          <tr><td><b>Farmacias</b></td><td>Farmacias cercanas, precio y existencia.</td><td>Pestaña 3</td></tr>
+          <tr><td><b>Búsqueda</b></td><td>Dos apartados: medicinas en farmacias cercanas, y hospitales y clínicas.</td><td>Pestaña 3</td></tr>
           <tr><td><b>Perfil</b></td><td>Ajustes, avisos, instalación, aviso legal y borrado.</td><td>Pestaña 4</td></tr>
         </tbody>
       </table>
@@ -1057,6 +1062,15 @@
           <p>La app pide aceptar los términos y el aviso de privacidad antes del primer uso, con una
           casilla aparte para consentir el envío de la receta a la inteligencia artificial, que es un
           dato de salud. Se guarda la versión aceptada y su fecha.</p>
+        </div>
+      </li>
+      <li>
+        <span class="fecha">25 de septiembre</span>
+        <div>
+          <h4>La pestaña Búsqueda</h4>
+          <p>«Farmacias» pasó a llamarse «Búsqueda» y ganó un segundo apartado: hospitales y clínicas
+          cercanos, con urgencias señaladas, horario, teléfono y ruta, además del aviso para llamar
+          al 911 cuando se trata de una emergencia.</p>
         </div>
       </li>
       <li>
